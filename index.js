@@ -4,7 +4,7 @@ const renderer = require("vue-server-renderer").createRenderer();
 module.exports = async (req, res) => {
   const app = new Vue({
     data: () => ({ date: Date.now() }),
-    template: `<div>Hello World {{ date }}</div>`
+    template: `<div>Hello World {{ date }}!!!</div>`
   });
 
   const html = await renderer.renderToString(app);
